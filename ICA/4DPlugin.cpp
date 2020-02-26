@@ -153,8 +153,8 @@ namespace Scan
 			
 			//ICDevice, BOOL
 			json_set_bool(json_scanner, L"isRemote", [scanner isRemote]);
-			json_set_bool(json_scanner, L"isShared", [scanner isShared]);
-			json_set_bool(json_scanner, L"hasConfigurableWiFiInterface", [scanner hasConfigurableWiFiInterface]);
+//			json_set_bool(json_scanner, L"isShared", [scanner isShared]);
+//			json_set_bool(json_scanner, L"hasConfigurableWiFiInterface", [scanner hasConfigurableWiFiInterface]);
 			json_set_bool(json_scanner, L"hasOpenSession", [scanner hasOpenSession]);
 			
 			//ICDevice, int

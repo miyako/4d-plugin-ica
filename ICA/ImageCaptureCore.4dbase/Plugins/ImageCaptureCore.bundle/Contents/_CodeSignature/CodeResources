@@ -100,7 +100,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1p3co9b9q0oLk4fTb/HfFSqTot8=
+			sbgOI4Jp+r9XCwDjar4U2b4CgY8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -108,6 +108,10 @@
 		<key>Resources/constants.xlf</key>
 		<data>
 		7yLgHg0L5fDwrVfzxhWHE0Pajvw=
+		</data>
+		<key>Resources/manifest.json</key>
+		<data>
+		DBjOKLpKTE547CmYM6PTa8z0tEU=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -380,11 +384,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1p3co9b9q0oLk4fTb/HfFSqTot8=
+			sbgOI4Jp+r9XCwDjar4U2b4CgY8=
 			</data>
 			<key>hash2</key>
 			<data>
-			V6i23P8XHSbciiWmppMbnS3KqKdk+z8D3hRybTNEF+A=
+			HFPqbtKPLEue8E3wYvbxs1yK2UV+6mT/fINIDSQQNR0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -398,6 +402,17 @@
 			<key>hash2</key>
 			<data>
 			mC06FKzLboRVNsYmGra0df6yCwnYnyugJhaMT8nrHDY=
+			</data>
+		</dict>
+		<key>Resources/manifest.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DBjOKLpKTE547CmYM6PTa8z0tEU=
+			</data>
+			<key>hash2</key>
+			<data>
+			beifvyIykgax5tYI+c5fkLIbx2nMy7d2gLbIjNmTgCs=
 			</data>
 		</dict>
 		<key>Windows/ImageCaptureCore.4DX</key>
@@ -422,15 +437,6 @@
 			D81BlAXC8IYBjKsGDu0nx8Zm3OxlDG6/r2pFvj/FY7A=
 			</data>
 		</dict>
-		<key>manifest.json</key>
-		<dict>
-			<key>cdhash</key>
-			<data>
-			PaXs+CFSxMN1QHZsxOIjShLdScU=
-			</data>
-			<key>requirement</key>
-			<string>identifier manifest and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
-		</dict>
 	</dict>
 	<key>rules</key>
 	<dict>
@@ -449,6 +455,11 @@
 			<true/>
 			<key>weight</key>
 			<real>1100</real>
+		</dict>
+		<key>^Resources/Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
 		</dict>
 		<key>^version.plist$</key>
 		<true/>
@@ -508,6 +519,11 @@
 			<true/>
 			<key>weight</key>
 			<real>1100</real>
+		</dict>
+		<key>^Resources/Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
 		</dict>
 		<key>^[^/]+$</key>
 		<dict>
