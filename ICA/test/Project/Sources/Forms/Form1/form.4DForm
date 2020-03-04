@@ -1,0 +1,161 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 5,
+	"bottomMargin": 5,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onUnload"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"<>SCAN_IMAGE": {
+					"type": "input",
+					"top": 95,
+					"left": 5,
+					"width": 479,
+					"height": 145,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "<>SCAN_IMAGE",
+					"dataSourceTypeHint": "picture",
+					"focusable": false,
+					"fill": "#FFFACD",
+					"borderStyle": "dotted",
+					"enterable": false,
+					"contextMenu": "none",
+					"pictureFormat": "proportionalTopLeft",
+					"dragging": "none"
+				},
+				"SCAN": {
+					"type": "button",
+					"top": 26,
+					"left": 74,
+					"width": 230,
+					"height": 64,
+					"sizingX": "grow",
+					"text": "SCAN",
+					"fontWeight": "bold",
+					"stroke": "#008000",
+					"focusable": false,
+					"method": "ObjectMethods/SCAN.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"<>SCANNER_ID": {
+					"type": "input",
+					"top": 5,
+					"left": 85,
+					"width": 339,
+					"height": 17,
+					"dataSource": "<>SCANNER_ID",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 5,
+					"left": 5,
+					"width": 73,
+					"height": 17,
+					"text": "scanner id:"
+				},
+				"<>SCANNER_ICON": {
+					"type": "input",
+					"top": 26,
+					"left": 5,
+					"width": 64,
+					"height": 64,
+					"dataSource": "<>SCANNER_ICON",
+					"dataSourceTypeHint": "picture",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "dotted",
+					"enterable": false,
+					"contextMenu": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "none"
+				},
+				"<>SCANNER_INFO": {
+					"type": "input",
+					"top": 95,
+					"left": 5,
+					"width": 479,
+					"height": 91,
+					"dataSource": "<>SCANNER_INFO",
+					"stroke": "#C0C0C0",
+					"textAlign": "center",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 76,
+					"fontWeight": "bold",
+					"fontStyle": "italic",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"CANCEL": {
+					"type": "button",
+					"top": 26,
+					"left": 309,
+					"width": 175,
+					"height": 64,
+					"sizingX": "move",
+					"text": "CANCEL",
+					"fontWeight": "bold",
+					"stroke": "#FF0000",
+					"focusable": false,
+					"method": "ObjectMethods/CANCEL.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"<>SCAN_ERROR": {
+					"type": "input",
+					"top": 95,
+					"left": 0,
+					"width": 479,
+					"height": 145,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "<>SCAN_ERROR",
+					"dataSourceTypeHint": "text",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none"
+				}
+			}
+		}
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
+}

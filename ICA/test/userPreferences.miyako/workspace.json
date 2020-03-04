@@ -1,0 +1,22 @@
+﻿{
+	"editors": [
+		{
+			"type": "explorer"
+		},
+		{
+			"type": "form",
+			"id": 1,
+			"formName": "Form1"
+		},
+		{
+			"type": "method",
+			"id": 2147483630,
+			"codeDescriptor": {
+				"type": 2,
+				"formName": "Form1",
+				"objectName": "SCAN",
+				"methodPath": "/SOURCES/Forms/Form1/ObjectMethods/SCAN.4dm"
+			}
+		}
+	]
+}
