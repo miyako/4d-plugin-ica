@@ -16,3 +16,7 @@ Control scanner device on macOS using ImageCaptureCore.
 it seems like flatbed scanning systematically fails on macOS Catalina (tested hp Office Jet Pro 6970).
 
 also, for some scanners, it may be necessary to install a 64-bit driver on Catalina (also hp Office Jet Pro 6970).
+
+### Syntax
+
+[miyako.github.io](https://miyako.github.io/2020/03/05/4d-plugin-ica.html)
