@@ -27,13 +27,13 @@
 		"stamp": "2019-07-24T08:49:03.338Z"
 	},
 	"Sources/Methods/generate_project.4dm": {
-		"startSelection": 21,
-		"endSelection": 21,
-		"firstSelectedLine": 10,
-		"lastSelectedLine": 10,
+		"startSelection": 31,
+		"endSelection": 31,
+		"firstSelectedLine": 2,
+		"lastSelectedLine": 2,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2020-03-04T02:43:01.660Z"
+		"stamp": "2020-09-17T14:04:46.378Z"
 	},
 	"Sources/Methods/generate_project_source.4dm": {
 		"startSelection": 18,
@@ -196,95 +196,5 @@
 		"folding": [],
 		"bookmarks": [],
 		"stamp": "2019-12-13T04:37:40.619Z"
-	},
-	"Sources/Methods/get_option_1.4dm": {
-		"startSelection": 7,
-		"endSelection": 7,
-		"firstSelectedLine": 23,
-		"lastSelectedLine": 23,
-		"folding": [],
-		"bookmarks": [],
-		"stamp": "2020-03-04T04:40:55.510Z"
-	},
-	"Sources/Methods/get_option_2.4dm": {
-		"startSelection": 7,
-		"endSelection": 7,
-		"firstSelectedLine": 21,
-		"lastSelectedLine": 21,
-		"folding": [],
-		"bookmarks": [],
-		"stamp": "2020-03-04T04:41:18.946Z"
-	},
-	"Sources/Methods/get_options_1.4dm": {
-		"startSelection": 43,
-		"endSelection": 43,
-		"firstSelectedLine": 34,
-		"lastSelectedLine": 34,
-		"folding": [],
-		"bookmarks": [],
-		"stamp": "2020-03-04T04:41:33.310Z"
-	},
-	"Sources/Methods/get_options_2.4dm": {
-		"startSelection": 7,
-		"endSelection": 7,
-		"firstSelectedLine": 60,
-		"lastSelectedLine": 60,
-		"folding": [],
-		"bookmarks": [],
-		"stamp": "2020-03-04T04:41:42.299Z"
-	},
-	"Sources/Methods/SCAN.4dm": {
-		"startSelection": 56,
-		"endSelection": 56,
-		"firstSelectedLine": 19,
-		"lastSelectedLine": 19,
-		"folding": [],
-		"bookmarks": [],
-		"stamp": "2020-03-04T07:23:39.591Z"
-	},
-	"Sources/Methods/SCAN_CANCEL.4dm": {
-		"startSelection": 21,
-		"endSelection": 21,
-		"firstSelectedLine": 4,
-		"lastSelectedLine": 4,
-		"folding": [],
-		"bookmarks": [],
-		"stamp": "2020-03-04T04:42:08.298Z"
-	},
-	"Sources/Forms/Form1/method.4dm": {
-		"startSelection": 0,
-		"endSelection": 0,
-		"firstSelectedLine": 13,
-		"lastSelectedLine": 13,
-		"folding": [],
-		"bookmarks": [],
-		"stamp": "2020-03-04T07:17:28.606Z"
-	},
-	"Sources/Methods/SCAN_ONE.4dm": {
-		"startSelection": 16,
-		"endSelection": 16,
-		"firstSelectedLine": 12,
-		"lastSelectedLine": 12,
-		"folding": [],
-		"bookmarks": [],
-		"stamp": "2020-03-04T07:25:15.937Z"
-	},
-	"Sources/DatabaseMethods/onExit.4dm": {
-		"startSelection": 0,
-		"endSelection": 0,
-		"firstSelectedLine": 0,
-		"lastSelectedLine": 0,
-		"folding": [],
-		"bookmarks": [],
-		"stamp": "2020-03-04T06:52:47.977Z"
-	},
-	"Sources/Forms/Form1/ObjectMethods/SCAN.4dm": {
-		"startSelection": 17,
-		"endSelection": 21,
-		"firstSelectedLine": 11,
-		"lastSelectedLine": 11,
-		"folding": [],
-		"bookmarks": [],
-		"stamp": "2020-03-04T04:42:22.890Z"
 	}
 }

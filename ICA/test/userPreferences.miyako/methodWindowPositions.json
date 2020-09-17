@@ -42,10 +42,10 @@
 		"height": 762
 	},
 	"Sources/Methods/generate_project.4dm": {
-		"left": 355,
-		"top": 333,
-		"width": 708,
-		"height": 520
+		"left": 682,
+		"top": 324,
+		"width": 925,
+		"height": 573
 	},
 	"Sources/Methods/generate_project_source.4dm": {
 		"left": 511,
@@ -156,69 +156,9 @@
 		"height": 662
 	},
 	"Sources/Methods/update_manifest_json.4dm": {
-		"left": 317,
-		"top": 512,
+		"left": 173,
+		"top": 458,
 		"width": 1129,
-		"height": 787
-	},
-	"Sources/Methods/get_option_1.4dm": {
-		"left": 355,
-		"top": 333,
-		"width": 708,
-		"height": 520
-	},
-	"Sources/Methods/get_option_2.4dm": {
-		"left": 355,
-		"top": 333,
-		"width": 708,
-		"height": 520
-	},
-	"Sources/Methods/get_options_1.4dm": {
-		"left": 355,
-		"top": 333,
-		"width": 708,
-		"height": 520
-	},
-	"Sources/Methods/get_options_2.4dm": {
-		"left": 355,
-		"top": 333,
-		"width": 708,
-		"height": 520
-	},
-	"Sources/Methods/SCAN.4dm": {
-		"left": 650,
-		"top": 122,
-		"width": 1160,
-		"height": 520
-	},
-	"Sources/Methods/SCAN_CANCEL.4dm": {
-		"left": 355,
-		"top": 333,
-		"width": 708,
-		"height": 520
-	},
-	"Sources/Forms/Form1/method.4dm": {
-		"left": 355,
-		"top": 333,
-		"width": 708,
-		"height": 520
-	},
-	"Sources/Methods/SCAN_ONE.4dm": {
-		"left": 427,
-		"top": 187,
-		"width": 1129,
-		"height": 787
-	},
-	"Sources/DatabaseMethods/onExit.4dm": {
-		"left": 310,
-		"top": 329,
-		"width": 1129,
-		"height": 787
-	},
-	"Sources/Forms/Form1/ObjectMethods/SCAN.4dm": {
-		"left": 183,
-		"top": 644,
-		"width": 1129,
-		"height": 787
+		"height": 757
 	}
 }

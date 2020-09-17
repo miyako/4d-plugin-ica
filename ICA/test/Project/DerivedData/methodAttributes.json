@@ -1,28 +1,10 @@
 ﻿{
 	"methods": {
-		"get_option_1": {
-			"timeStamp": "2020-03-04T04:42:22.853Z",
-			"attributes": {
-				"invisible": true
-			}
-		},
 		"generate_file_from_template": {
 			"timeStamp": "2019-07-29T04:26:04.000Z",
 			"attributes": {
 				"invisible": true,
 				"preemptive": "capable"
-			}
-		},
-		"get_option_2": {
-			"timeStamp": "2020-03-04T04:42:22.856Z",
-			"attributes": {
-				"invisible": true
-			}
-		},
-		"SCAN_ONE": {
-			"timeStamp": "2020-03-04T07:17:37.994Z",
-			"attributes": {
-				"invisible": true
 			}
 		},
 		"generate_project_infoplist": {
@@ -53,29 +35,8 @@
 				"preemptive": "capable"
 			}
 		},
-		"SCAN_CANCEL": {
-			"timeStamp": "2020-03-04T04:42:22.855Z",
-			"attributes": {
-				"invisible": true
-			}
-		},
-		"TEST": {
-			"timeStamp": "2020-03-04T04:42:22.854Z"
-		},
-		"get_options_1": {
-			"timeStamp": "2020-03-04T04:42:22.852Z",
-			"attributes": {
-				"invisible": true
-			}
-		},
-		"get_options_2": {
-			"timeStamp": "2020-03-04T04:42:22.856Z",
-			"attributes": {
-				"invisible": true
-			}
-		},
 		"generate_project": {
-			"timeStamp": "2020-03-04T02:43:01.660Z"
+			"timeStamp": "2019-07-24T08:02:39.000Z"
 		},
 		"generate_project_vs": {
 			"timeStamp": "2019-07-24T08:49:03.000Z",
@@ -89,12 +50,6 @@
 			"attributes": {
 				"invisible": true,
 				"preemptive": "capable"
-			}
-		},
-		"SCAN": {
-			"timeStamp": "2020-03-04T07:23:39.591Z",
-			"attributes": {
-				"invisible": true
 			}
 		},
 		"generate_project_source": {

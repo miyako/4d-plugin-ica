@@ -1,7 +1,7 @@
 //%attributes = {}
 $params:=New object:C1471
 $params.PRODUCT_NAME:="ImageCaptureCore"
-$params.PRODUCT_VERSION:="2.0"
+$params.PRODUCT_VERSION:="2.0.0"
 $params.AUTHOR:="miyako"
 $params.CREATE_DATE:=Current date:C33
 $params.COPYRIGHT_YEAR:=Year of:C25(Current date:C33)

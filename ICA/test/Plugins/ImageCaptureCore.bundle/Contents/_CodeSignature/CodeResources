@@ -8,24 +8,24 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sbgOI4Jp+r9XCwDjar4U2b4CgY8=
+			sZHmYMO+dQykK8gJpSCrzp/YT3w=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>Resources/constants.xlf</key>
 		<data>
-		deZSpqsBeTr2noNOphjWG3XMMKE=
+		QwSXrhVSQuqcKlh6V7lMdkaGpY0=
+		</data>
+		<key>Resources/manifest.json</key>
+		<data>
+		1LU7rUZSkm3b4Ndf+HLWUPEfRiE=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>QuickLook/Thumbnail.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			hC+U8EqvyIRM1lLakHLfvl4V9Tc=
-			</data>
 			<key>hash2</key>
 			<data>
 			nGfrvibB5KlzvZgF4Bra+l0HpRloxismgTLePnOwCdk=
@@ -33,34 +33,29 @@
 		</dict>
 		<key>Resources/English.lproj/InfoPlist.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			sbgOI4Jp+r9XCwDjar4U2b4CgY8=
-			</data>
 			<key>hash2</key>
 			<data>
-			HFPqbtKPLEue8E3wYvbxs1yK2UV+6mT/fINIDSQQNR0=
+			j3Mnr+d68/NbQGjSPfBi90oaasmcsdM4+PaC/+ujpC0=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>Resources/constants.xlf</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			deZSpqsBeTr2noNOphjWG3XMMKE=
-			</data>
 			<key>hash2</key>
 			<data>
-			fmJDvAuu/5/d8gn2REyyslua1tLoyZnJ/gnypLmdpDo=
+			0tO3IkA0RKMTw4ElOC7MxbV6XenlEEsDrwMBFVOvFJU=
+			</data>
+		</dict>
+		<key>Resources/manifest.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			l9LICDI7B1pJvquKWIRNLpYUbF6aWlCNC8OzpxZ2LpM=
 			</data>
 		</dict>
 		<key>Windows/ImageCaptureCore.4DX</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			hL9gqzB1pAgChKZ1uj+Jqt43yxs=
-			</data>
 			<key>hash2</key>
 			<data>
 			ZCCEqtPmUM+2iJDxTvuZrd5mchV7dH5Z4RZvNF7YQT0=
@@ -68,23 +63,10 @@
 		</dict>
 		<key>Windows64/ImageCaptureCore.4DX</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			zvoZ7ULt+O/aKx6NzgaqTillGNg=
-			</data>
 			<key>hash2</key>
 			<data>
 			xZ0isPdvytfz/ISMhvmTet0RKxwRCg6HeDepN7N2icI=
 			</data>
-		</dict>
-		<key>manifest.json</key>
-		<dict>
-			<key>cdhash</key>
-			<data>
-			uu7Qkz+Tqo/4GQLDLFcPpPuVez4=
-			</data>
-			<key>requirement</key>
-			<string>identifier manifest and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
 		</dict>
 	</dict>
 	<key>rules</key>
