@@ -30,14 +30,14 @@
 		D14A3D362513A4DF0090244B /* 4DPlugin-JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = D14A3D342513A4DF0090244B /* 4DPlugin-JSON.h */; };
 		D14A3D372513A4DF0090244B /* 4DPlugin-JSON.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D14A3D352513A4DF0090244B /* 4DPlugin-JSON.cpp */; };
 		D14A3D392513A5010090244B /* ImageCaptureCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D14A3D382513A5010090244B /* ImageCaptureCore.framework */; };
-		D14A3D3B2513A55B0090244B /* libjsoncpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D14A3D3A2513A55B0090244B /* libjsoncpp.a */; };
+		D155AC2B26089DC1000A0275 /* libjsoncpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D14A3D3A2513A55B0090244B /* libjsoncpp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		D134D4AB1A030B7A008D14EF /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = .;
+			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
 				D134D4AC1A030BA0008D14EF /* manifest.json in CopyFiles */,
@@ -74,6 +74,7 @@
 		D14A3D382513A5010090244B /* ImageCaptureCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageCaptureCore.framework; path = System/Library/Frameworks/ImageCaptureCore.framework; sourceTree = SDKROOT; };
 		D14A3D3A2513A55B0090244B /* libjsoncpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjsoncpp.a; path = a/libjsoncpp.a; sourceTree = "<group>"; };
 		D14D10DD1A03A8A5008B3411 /* constants.xlf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = constants.xlf; sourceTree = "<group>"; };
+		D15E3ACD26084CAA0091EA15 /* libjsoncpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjsoncpp.a; path = a/libjsoncpp.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D14A3D3B2513A55B0090244B /* libjsoncpp.a in Frameworks */,
+				D155AC2B26089DC1000A0275 /* libjsoncpp.a in Frameworks */,
 				D14A3D392513A5010090244B /* ImageCaptureCore.framework in Frameworks */,
 				D130064F12F02D9700702C0E /* Cocoa.framework in Frameworks */,
 			);
@@ -93,6 +94,7 @@
 		089C166AFE841209C02AAC07 /* ImageCaptureCore */ = {
 			isa = PBXGroup;
 			children = (
+				D15E3ACD26084CAA0091EA15 /* libjsoncpp.a */,
 				D14A3D352513A4DF0090244B /* 4DPlugin-JSON.cpp */,
 				D14A3D342513A4DF0090244B /* 4DPlugin-JSON.h */,
 				D14A3D2F2513A4C10090244B /* ARRAY_TEXT.cpp */,
@@ -362,6 +364,7 @@
 					"$(PROJECT_DIR)/a",
 				);
 				LIBRARY_STYLE = Bundle;
+				MARKETING_VERSION = 2.1.0;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
@@ -412,6 +415,7 @@
 					"$(PROJECT_DIR)/a",
 				);
 				LIBRARY_STYLE = Bundle;
+				MARKETING_VERSION = 2.1.0;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
@@ -460,6 +464,7 @@
 					"$(PROJECT_DIR)/a",
 				);
 				LIBRARY_STYLE = Bundle;
+				MARKETING_VERSION = 2.1.0;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
@@ -517,6 +522,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				OBJROOT = "$(SRCROOT)/build";
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 				SYMROOT = "$(SRCROOT)/test/Plugins";
 			};
@@ -562,6 +568,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				OBJROOT = "$(SRCROOT)/build";
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 				SYMROOT = "$(SRCROOT)/test/Plugins";
 			};
@@ -606,6 +613,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 				SYMROOT = "$(SRCROOT)/test/Plugins";
 			};

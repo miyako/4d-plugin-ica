@@ -8,7 +8,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sZHmYMO+dQykK8gJpSCrzp/YT3w=
+			l0W89LWOhMNqnnqlxxxDNM5blvM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -35,7 +35,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			j3Mnr+d68/NbQGjSPfBi90oaasmcsdM4+PaC/+ujpC0=
+			BcFke3iBUOF+xl1tjufhbGDg3AFCePenFl9qYA/NOzU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -52,13 +52,6 @@
 			<key>hash2</key>
 			<data>
 			l9LICDI7B1pJvquKWIRNLpYUbF6aWlCNC8OzpxZ2LpM=
-			</data>
-		</dict>
-		<key>Windows/ImageCaptureCore.4DX</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ZCCEqtPmUM+2iJDxTvuZrd5mchV7dH5Z4RZvNF7YQT0=
 			</data>
 		</dict>
 		<key>Windows64/ImageCaptureCore.4DX</key>
