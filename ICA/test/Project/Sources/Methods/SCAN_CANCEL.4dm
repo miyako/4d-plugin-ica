@@ -1,6 +1,6 @@
 //%attributes = {"invisible":true}
-C_TEXT:C284($1;$scanner)
+C_TEXT:C284($1; $scanner)
 
 $scanner:=$1
 
-ICA CANCEL ($scanner)
+ICA CANCEL($scanner)
