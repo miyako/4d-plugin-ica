@@ -12,19 +12,32 @@
 		18B684F906944F2000CC6A1E /* Flags.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B684F206944F2000CC6A1E /* Flags.h */; };
 		18B684FA06944F2000CC6A1E /* PrivateTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B684F306944F2000CC6A1E /* PrivateTypes.h */; };
 		18B684FB06944F2000CC6A1E /* PublicTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B684F406944F2000CC6A1E /* PublicTypes.h */; };
-		18B684FF06944F8800CC6A1E /* 4DPlugin-$4DEVAL(Replace string:C233($1.PRODUCT_NAME;" ";"-")).cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18B684FE06944F8800CC6A1E /* 4DPlugin-$4DEVAL(Replace string:C233($1.PRODUCT_NAME;" ";"-")).cpp */; };
+		18B684FF06944F8800CC6A1E /* 4DPlugin-ImageCaptureCore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18B684FE06944F8800CC6A1E /* 4DPlugin-ImageCaptureCore.cpp */; };
 		8D01CCCA0486CAD60068D4B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
-		D120937F13534DCC00A72CAA /* 4DPlugin-$4DEVAL(Replace string:C233($1.PRODUCT_NAME;" ";"-")).h in Headers */ = {isa = PBXBuildFile; fileRef = D120937E13534DCC00A72CAA /* 4DPlugin-$4DEVAL(Replace string:C233($1.PRODUCT_NAME;" ";"-")).h */; };
+		D120937F13534DCC00A72CAA /* 4DPlugin-ImageCaptureCore.h in Headers */ = {isa = PBXBuildFile; fileRef = D120937E13534DCC00A72CAA /* 4DPlugin-ImageCaptureCore.h */; };
 		D130064F12F02D9700702C0E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D130064E12F02D9700702C0E /* Cocoa.framework */; };
 		D13116A91A03ACB700DE1322 /* 4DPluginAPI.c in Sources */ = {isa = PBXBuildFile; fileRef = D13116A81A03ACB700DE1322 /* 4DPluginAPI.c */; settings = {COMPILER_FLAGS = "-Wno-multichar"; }; };
 		D134D4AC1A030BA0008D14EF /* manifest.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = D134D4A91A030B06008D14EF /* manifest.json */; };
+		D14A3D272513A4A70090244B /* C_TEXT.h in Headers */ = {isa = PBXBuildFile; fileRef = D14A3D222513A4A70090244B /* C_TEXT.h */; };
+		D14A3D282513A4A70090244B /* C_TYPES.h in Headers */ = {isa = PBXBuildFile; fileRef = D14A3D232513A4A70090244B /* C_TYPES.h */; };
+		D14A3D292513A4A70090244B /* C_LONGINT.h in Headers */ = {isa = PBXBuildFile; fileRef = D14A3D242513A4A70090244B /* C_LONGINT.h */; };
+		D14A3D2A2513A4A70090244B /* C_TEXT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D14A3D252513A4A70090244B /* C_TEXT.cpp */; };
+		D14A3D2B2513A4A70090244B /* C_LONGINT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D14A3D262513A4A70090244B /* C_LONGINT.cpp */; };
+		D14A3D302513A4C10090244B /* C_BLOB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D14A3D2C2513A4C10090244B /* C_BLOB.cpp */; };
+		D14A3D312513A4C10090244B /* C_BLOB.h in Headers */ = {isa = PBXBuildFile; fileRef = D14A3D2D2513A4C10090244B /* C_BLOB.h */; };
+		D14A3D322513A4C10090244B /* ARRAY_TEXT.h in Headers */ = {isa = PBXBuildFile; fileRef = D14A3D2E2513A4C10090244B /* ARRAY_TEXT.h */; };
+		D14A3D332513A4C10090244B /* ARRAY_TEXT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D14A3D2F2513A4C10090244B /* ARRAY_TEXT.cpp */; };
+		D14A3D362513A4DF0090244B /* 4DPlugin-JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = D14A3D342513A4DF0090244B /* 4DPlugin-JSON.h */; };
+		D14A3D372513A4DF0090244B /* 4DPlugin-JSON.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D14A3D352513A4DF0090244B /* 4DPlugin-JSON.cpp */; };
+		D14A3D392513A5010090244B /* ImageCaptureCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D14A3D382513A5010090244B /* ImageCaptureCore.framework */; };
+		D155AC2B26089DC1000A0275 /* libjsoncpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D14A3D3A2513A55B0090244B /* libjsoncpp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		D134D4AB1A030B7A008D14EF /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = ..;
+			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
 				D134D4AC1A030BA0008D14EF /* manifest.json in CopyFiles */,
@@ -35,19 +48,33 @@
 
 /* Begin PBXFileReference section */
 		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		189286350695AD8900B05D6E /* $4DEVAL($1.PRODUCT_NAME).bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "$4DEVAL($1.PRODUCT_NAME).bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		189286350695AD8900B05D6E /* ImageCaptureCore.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageCaptureCore.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B684F006944F2000CC6A1E /* 4DPluginAPI.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = 4DPluginAPI.h; sourceTree = "<group>"; };
 		18B684F106944F2000CC6A1E /* EntryPoints.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = EntryPoints.h; sourceTree = "<group>"; };
 		18B684F206944F2000CC6A1E /* Flags.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Flags.h; sourceTree = "<group>"; };
 		18B684F306944F2000CC6A1E /* PrivateTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PrivateTypes.h; sourceTree = "<group>"; };
 		18B684F406944F2000CC6A1E /* PublicTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PublicTypes.h; sourceTree = "<group>"; };
-		18B684FE06944F8800CC6A1E /* 4DPlugin-$4DEVAL(Replace string:C233($1.PRODUCT_NAME;" ";"-")).cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; path = "4DPlugin-$4DEVAL(Replace string:C233($1.PRODUCT_NAME;" ";"-")).cpp"; sourceTree = "<group>"; };
+		18B684FE06944F8800CC6A1E /* 4DPlugin-ImageCaptureCore.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; path = "4DPlugin-ImageCaptureCore.cpp"; sourceTree = "<group>"; };
 		8D01CCD10486CAD60068D4B7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		D120937E13534DCC00A72CAA /* 4DPlugin-$4DEVAL(Replace string:C233($1.PRODUCT_NAME;" ";"-")).h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "4DPlugin-$4DEVAL(Replace string:C233($1.PRODUCT_NAME;" ";"-")).h"; sourceTree = "<group>"; };
+		D120937E13534DCC00A72CAA /* 4DPlugin-ImageCaptureCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "4DPlugin-ImageCaptureCore.h"; sourceTree = "<group>"; };
 		D130064E12F02D9700702C0E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		D13116A81A03ACB700DE1322 /* 4DPluginAPI.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = 4DPluginAPI.c; sourceTree = "<group>"; };
 		D134D4A91A030B06008D14EF /* manifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		D14A3D222513A4A70090244B /* C_TEXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = C_TEXT.h; path = "4D Plugin API/Classes/C_TEXT.h"; sourceTree = "<group>"; };
+		D14A3D232513A4A70090244B /* C_TYPES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = C_TYPES.h; path = "4D Plugin API/Classes/C_TYPES.h"; sourceTree = "<group>"; };
+		D14A3D242513A4A70090244B /* C_LONGINT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = C_LONGINT.h; path = "4D Plugin API/Classes/C_LONGINT.h"; sourceTree = "<group>"; };
+		D14A3D252513A4A70090244B /* C_TEXT.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = C_TEXT.cpp; path = "4D Plugin API/Classes/C_TEXT.cpp"; sourceTree = "<group>"; };
+		D14A3D262513A4A70090244B /* C_LONGINT.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = C_LONGINT.cpp; path = "4D Plugin API/Classes/C_LONGINT.cpp"; sourceTree = "<group>"; };
+		D14A3D2C2513A4C10090244B /* C_BLOB.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = C_BLOB.cpp; path = "4D Plugin API/Classes/C_BLOB.cpp"; sourceTree = "<group>"; };
+		D14A3D2D2513A4C10090244B /* C_BLOB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = C_BLOB.h; path = "4D Plugin API/Classes/C_BLOB.h"; sourceTree = "<group>"; };
+		D14A3D2E2513A4C10090244B /* ARRAY_TEXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARRAY_TEXT.h; path = "4D Plugin API/Classes/ARRAY_TEXT.h"; sourceTree = "<group>"; };
+		D14A3D2F2513A4C10090244B /* ARRAY_TEXT.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = ARRAY_TEXT.cpp; path = "4D Plugin API/Classes/ARRAY_TEXT.cpp"; sourceTree = "<group>"; };
+		D14A3D342513A4DF0090244B /* 4DPlugin-JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "4DPlugin-JSON.h"; path = "support/4DPlugin-JSON.h"; sourceTree = "<group>"; };
+		D14A3D352513A4DF0090244B /* 4DPlugin-JSON.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = "4DPlugin-JSON.cpp"; path = "support/4DPlugin-JSON.cpp"; sourceTree = "<group>"; };
+		D14A3D382513A5010090244B /* ImageCaptureCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageCaptureCore.framework; path = System/Library/Frameworks/ImageCaptureCore.framework; sourceTree = SDKROOT; };
+		D14A3D3A2513A55B0090244B /* libjsoncpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjsoncpp.a; path = a/libjsoncpp.a; sourceTree = "<group>"; };
 		D14D10DD1A03A8A5008B3411 /* constants.xlf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = constants.xlf; sourceTree = "<group>"; };
+		D15E3ACD26084CAA0091EA15 /* libjsoncpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjsoncpp.a; path = a/libjsoncpp.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D155AC2B26089DC1000A0275 /* libjsoncpp.a in Frameworks */,
+				D14A3D392513A5010090244B /* ImageCaptureCore.framework in Frameworks */,
 				D130064F12F02D9700702C0E /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,9 +91,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		089C166AFE841209C02AAC07 /* $4DEVAL($1.PRODUCT_NAME) */ = {
+		089C166AFE841209C02AAC07 /* ImageCaptureCore */ = {
 			isa = PBXGroup;
 			children = (
+				D15E3ACD26084CAA0091EA15 /* libjsoncpp.a */,
+				D14A3D352513A4DF0090244B /* 4DPlugin-JSON.cpp */,
+				D14A3D342513A4DF0090244B /* 4DPlugin-JSON.h */,
+				D14A3D2F2513A4C10090244B /* ARRAY_TEXT.cpp */,
+				D14A3D2E2513A4C10090244B /* ARRAY_TEXT.h */,
+				D14A3D2C2513A4C10090244B /* C_BLOB.cpp */,
+				D14A3D2D2513A4C10090244B /* C_BLOB.h */,
+				D14A3D262513A4A70090244B /* C_LONGINT.cpp */,
+				D14A3D242513A4A70090244B /* C_LONGINT.h */,
+				D14A3D252513A4A70090244B /* C_TEXT.cpp */,
+				D14A3D222513A4A70090244B /* C_TEXT.h */,
+				D14A3D232513A4A70090244B /* C_TYPES.h */,
 				D108BD7A1A03D1E6001F1B90 /* Manifest */,
 				08FB77ADFE841716C02AAC07 /* Source */,
 				089C167CFE841241C02AAC07 /* Resources */,
@@ -72,7 +113,7 @@
 				189286360695AD8900B05D6E /* Products */,
 				D16FBB3C22A4C07E008F0416 /* Frameworks */,
 			);
-			name = "$4DEVAL($1.PRODUCT_NAME)";
+			name = ImageCaptureCore;
 			sourceTree = "<group>";
 		};
 		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
@@ -95,8 +136,8 @@
 		08FB77ADFE841716C02AAC07 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				18B684FE06944F8800CC6A1E /* 4DPlugin-$4DEVAL(Replace string:C233($1.PRODUCT_NAME;" ";"-")).cpp */,
-				D120937E13534DCC00A72CAA /* 4DPlugin-$4DEVAL(Replace string:C233($1.PRODUCT_NAME;" ";"-")).h */,
+				18B684FE06944F8800CC6A1E /* 4DPlugin-ImageCaptureCore.cpp */,
+				D120937E13534DCC00A72CAA /* 4DPlugin-ImageCaptureCore.h */,
 				18B684ED06944F2000CC6A1E /* 4D Plugin API */,
 			);
 			name = Source;
@@ -105,7 +146,7 @@
 		189286360695AD8900B05D6E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				189286350695AD8900B05D6E /* $4DEVAL($1.PRODUCT_NAME).bundle */,
+				189286350695AD8900B05D6E /* ImageCaptureCore.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,6 +176,8 @@
 		D16FBB3C22A4C07E008F0416 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D14A3D3A2513A55B0090244B /* libjsoncpp.a */,
+				D14A3D382513A5010090244B /* ImageCaptureCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -147,20 +190,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				18B684F706944F2000CC6A1E /* 4DPluginAPI.h in Headers */,
+				D14A3D322513A4C10090244B /* ARRAY_TEXT.h in Headers */,
 				18B684F806944F2000CC6A1E /* EntryPoints.h in Headers */,
+				D14A3D362513A4DF0090244B /* 4DPlugin-JSON.h in Headers */,
 				18B684F906944F2000CC6A1E /* Flags.h in Headers */,
+				D14A3D312513A4C10090244B /* C_BLOB.h in Headers */,
 				18B684FA06944F2000CC6A1E /* PrivateTypes.h in Headers */,
+				D14A3D272513A4A70090244B /* C_TEXT.h in Headers */,
+				D14A3D292513A4A70090244B /* C_LONGINT.h in Headers */,
 				18B684FB06944F2000CC6A1E /* PublicTypes.h in Headers */,
-				D120937F13534DCC00A72CAA /* $4DEVAL($1.PRODUCT_NAME).h in Headers */,
+				D14A3D282513A4A70090244B /* C_TYPES.h in Headers */,
+				D120937F13534DCC00A72CAA /* 4DPlugin-ImageCaptureCore.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		8D01CCC60486CAD60068D4B7 /* $4DEVAL($1.PRODUCT_NAME) */ = {
+		8D01CCC60486CAD60068D4B7 /* ImageCaptureCore */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 42D60B3F0A9DDBC8002ABB42 /* Build configuration list for PBXNativeTarget "$4DEVAL($1.PRODUCT_NAME)" */;
+			buildConfigurationList = 42D60B3F0A9DDBC8002ABB42 /* Build configuration list for PBXNativeTarget "ImageCaptureCore" */;
 			buildPhases = (
 				8D01CCC70486CAD60068D4B7 /* Headers */,
 				8D01CCC90486CAD60068D4B7 /* Resources */,
@@ -168,16 +217,16 @@
 				8D01CCCB0486CAD60068D4B7 /* Sources */,
 				8D01CCCD0486CAD60068D4B7 /* Frameworks */,
 				8D01CCCF0486CAD60068D4B7 /* Rez */,
-                D1292E7B22C4A91E00CB5A8C /* ShellScript */,
+				D1292E7B22C4A91E00CB5A8C /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "$4DEVAL($1.PRODUCT_NAME)";
+			name = ImageCaptureCore;
 			productInstallPath = "$(HOME)/Library/Bundles";
-			productName = "$4DEVAL($1.PRODUCT_NAME)";
-			productReference = 189286350695AD8900B05D6E /* $4DEVAL($1.PRODUCT_NAME).bundle */;
+			productName = ImageCaptureCore;
+			productReference = 189286350695AD8900B05D6E /* ImageCaptureCore.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -194,7 +243,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 42D60B430A9DDBC8002ABB42 /* Build configuration list for PBXProject "$4DEVAL($1.PRODUCT_NAME)" */;
+			buildConfigurationList = 42D60B430A9DDBC8002ABB42 /* Build configuration list for PBXProject "ImageCaptureCore" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -204,12 +253,12 @@
 				French,
 				German,
 			);
-			mainGroup = 089C166AFE841209C02AAC07 /* $4DEVAL($1.PRODUCT_NAME) */;
+			mainGroup = 089C166AFE841209C02AAC07 /* ImageCaptureCore */;
 			productRefGroup = 189286360695AD8900B05D6E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D01CCC60486CAD60068D4B7 /* $4DEVAL($1.PRODUCT_NAME) */,
+				8D01CCC60486CAD60068D4B7 /* ImageCaptureCore */,
 			);
 		};
 /* End PBXProject section */
@@ -236,19 +285,19 @@
 /* End PBXRezBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-D1292E7B22C4A91E00CB5A8C /* ShellScript */ = {
-isa = PBXShellScriptBuildPhase;
-buildActionMask = 2147483647;
-files = (
-);
-inputPaths = (
-);
-outputPaths = (
-);
-runOnlyForDeploymentPostprocessing = 0;
-shellPath = /bin/sh;
-shellScript = "if test \"$CONFIGURATION\" == 'Deployment'; then\n\n    USER_NAME=keisuke.miyako@4d.com\n    UUID=`uuidgen | tr -d - | tr -d '\\n' | tr '[:upper:]' '[:lower:]'`\n    DEVELOPER_ID=`security find-identity -p codesigning -v | egrep 'Developer ID Application[^\"]+' -o`\n    PRODUCT_PATH=\"$CODESIGNING_FOLDER_PATH\"\n    \n    #clean\n    xattr -cr \"$PRODUCT_PATH\"\n    codesign --remove-signature \"$PRODUCT_PATH\"\n    \n    #sign\n    codesign --verbose --deep --timestamp --force --sign \"$DEVELOPER_ID\" \"$PRODUCT_PATH\"\n    \n    #archive\n    DMG_PATH=\"$PROJECT_DIR/$PRODUCT_NAME.dmg\"\n    ZIP_PATH=\"$PROJECT_DIR/$PRODUCT_NAME.zip\" #for windows\n    rm -f \"$DMG_PATH\"\n    hdiutil create -format UDBZ -plist -srcfolder \"$PRODUCT_PATH\" \"$DMG_PATH\"\n    rm -f \"$ZIP_PATH\"\n    ditto -c -k --keepParent \"$PRODUCT_PATH\" \"$ZIP_PATH\"\n    \n    # must staple the same dmg that was submitted for notarisation\n    # to staple the bundle inside the dmg too,\n    # one must:\n    # sign the bundle\n    # archive the bundle and notarise the dmg\n    # staple the bundle\n    # archive the bundle and notarise the dmg again\n    # staple the dmg\n    # here, we just staple the dmg. it should be sufficient    \n    \n    #round 2\n    echo \"# staple only the dmg\"\n    echo \"\\r\"\n    echo \"xcrun stapler staple \\\"$DMG_PATH\\\"\"\n    echo \"\\r\"\n    \n    #round 3 (optional)\n    echo \"# staple the bundle and the dmg\"\n    echo \"\\r\"\n    echo \"xcrun stapler staple \\\"$PRODUCT_PATH\\\"\"\n    echo \"rm -f \\\"$DMG_PATH\\\"\"\n    echo \"hdiutil create -format UDBZ -plist -srcfolder  \\\"$PRODUCT_PATH\\\" \\\"$DMG_PATH\\\" \"\n    echo \"xcrun altool --notarize-app --file \\\"$DMG_PATH\\\" --username \\\"$USER_NAME\\\" --password \\\"@keychain:altool\\\" --primary-bundle-id $PRODUCT_BUNDLE_IDENTIFIER.$UUID\"\n    echo \"\\r\"\n    \n    #round 1\n    xcrun altool --notarize-app --file \"$DMG_PATH\" --username \"$USER_NAME\" --password \"@keychain:altool\" --primary-bundle-id $PRODUCT_BUNDLE_IDENTIFIER.$UUID\n    \n    #for round 3    \n    UUID=`uuidgen | tr -d - | tr -d '\\n' | tr '[:upper:]' '[:lower:]'`\nelse\n    echo \"No notarization performed as this is not a release build.\"\nfi\n";
-};
+		D1292E7B22C4A91E00CB5A8C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if test \"$CONFIGURATION\" == 'Deployment'; then\n\n    USER_NAME=keisuke.miyako@4d.com\n    UUID=`uuidgen | tr -d - | tr -d '\\n' | tr '[:upper:]' '[:lower:]'`\n    DEVELOPER_ID=`security find-identity -p codesigning -v | egrep 'Developer ID Application[^\"]+' -o`\n    PRODUCT_PATH=\"$CODESIGNING_FOLDER_PATH\"\n    \n    #clean\n    xattr -cr \"$PRODUCT_PATH\"\n    codesign --remove-signature \"$PRODUCT_PATH\"\n    \n    #sign\n    codesign --verbose --deep --timestamp --force --sign \"Developer ID Application: keisuke miyako (Y69CWUC25B)\" \"$PRODUCT_PATH\"\n    \n    #archive\n    DMG_PATH=\"$PROJECT_DIR/$PRODUCT_NAME.dmg\"\n    ZIP_PATH=\"$PROJECT_DIR/$PRODUCT_NAME.zip\" #for windows\n    rm -f \"$DMG_PATH\"\n    hdiutil create -format UDBZ -plist -srcfolder \"$PRODUCT_PATH\" \"$DMG_PATH\"\n    rm -f \"$ZIP_PATH\"\n    ditto -c -k --keepParent \"$PRODUCT_PATH\" \"$ZIP_PATH\"\n    \n    xcrun notarytool submit \"$ZIP_PATH\" --keychain-profile \"notarytool\" --wait\n    xcrun notarytool submit \"$DMG_PATH\" --keychain-profile \"notarytool\" --wait\n        \n    xcrun stapler staple \"$DMG_PATH\"\n\nelse\n    echo \"No notarization performed as this is not a release build.\"\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -256,8 +305,13 @@ shellScript = "if test \"$CONFIGURATION\" == 'Deployment'; then\n\n    USER_NAME
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18B684FF06944F8800CC6A1E /* 4DPlugin-$4DEVAL(Replace string:C233($1.PRODUCT_NAME;" ";"-")).cpp in Sources */,
+				18B684FF06944F8800CC6A1E /* 4DPlugin-ImageCaptureCore.cpp in Sources */,
+				D14A3D2A2513A4A70090244B /* C_TEXT.cpp in Sources */,
+				D14A3D332513A4C10090244B /* ARRAY_TEXT.cpp in Sources */,
 				D13116A91A03ACB700DE1322 /* 4DPluginAPI.c in Sources */,
+				D14A3D302513A4C10090244B /* C_BLOB.cpp in Sources */,
+				D14A3D372513A4DF0090244B /* 4DPlugin-JSON.cpp in Sources */,
+				D14A3D2B2513A4A70090244B /* C_LONGINT.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +332,7 @@ shellScript = "if test \"$CONFIGURATION\" == 'Deployment'; then\n\n    USER_NAME
 		42D60B400A9DDBC8002ABB42 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-                ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_LINK_OBJC_RUNTIME = NO;
@@ -286,6 +340,7 @@ shellScript = "if test \"$CONFIGURATION\" == 'Deployment'; then\n\n    USER_NAME
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2.1.0;
 				DEBUGGING_SYMBOLS = YES;
 				DEPLOYMENT_LOCATION = NO;
 				DEVELOPMENT_TEAM = Y69CWUC25B;
@@ -297,7 +352,7 @@ shellScript = "if test \"$CONFIGURATION\" == 'Deployment'; then\n\n    USER_NAME
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-                GCC_PREFIX_HEADER = ""; /* "4D Plugin_Prefix.pch"; */
+				GCC_PREFIX_HEADER = "";
 				GCC_VERSION = "";
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
@@ -310,11 +365,13 @@ shellScript = "if test \"$CONFIGURATION\" == 'Deployment'; then\n\n    USER_NAME
 					"$(PROJECT_DIR)/a",
 				);
 				LIBRARY_STYLE = Bundle;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MARKETING_VERSION = 2.1.0;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.4D.$4DEVAL(Replace string:C233($1.PRODUCT_NAME;" ";"-"))";
-				PRODUCT_NAME = "$4DEVAL($1.PRODUCT_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.4D.ImageCaptureCore;
+				PRODUCT_NAME = ImageCaptureCore;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SECTORDER_FLAGS = "";
@@ -331,7 +388,7 @@ shellScript = "if test \"$CONFIGURATION\" == 'Deployment'; then\n\n    USER_NAME
 		42D60B410A9DDBC8002ABB42 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-                ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_LINK_OBJC_RUNTIME = NO;
@@ -339,6 +396,7 @@ shellScript = "if test \"$CONFIGURATION\" == 'Deployment'; then\n\n    USER_NAME
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 2.1.0;
 				DEPLOYMENT_LOCATION = NO;
 				DEVELOPMENT_TEAM = Y69CWUC25B;
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -347,7 +405,7 @@ shellScript = "if test \"$CONFIGURATION\" == 'Deployment'; then\n\n    USER_NAME
 				GCC_ENABLE_TRIGRAPHS = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-                GCC_PREFIX_HEADER = ""; /* "4D Plugin_Prefix.pch"; */
+				GCC_PREFIX_HEADER = "";
 				GCC_VERSION = "";
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
@@ -360,11 +418,13 @@ shellScript = "if test \"$CONFIGURATION\" == 'Deployment'; then\n\n    USER_NAME
 					"$(PROJECT_DIR)/a",
 				);
 				LIBRARY_STYLE = Bundle;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MARKETING_VERSION = 2.1.0;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.4D.$4DEVAL(Replace string:C233($1.PRODUCT_NAME;" ";"-"))";
-				PRODUCT_NAME = "$4DEVAL($1.PRODUCT_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.4D.ImageCaptureCore;
+				PRODUCT_NAME = ImageCaptureCore;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SECTORDER_FLAGS = "";
@@ -381,13 +441,14 @@ shellScript = "if test \"$CONFIGURATION\" == 'Deployment'; then\n\n    USER_NAME
 		42D60B420A9DDBC8002ABB42 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-                ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_LINK_OBJC_RUNTIME = NO;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2.1.0;
 				DEPLOYMENT_LOCATION = NO;
 				DEVELOPMENT_TEAM = Y69CWUC25B;
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -395,7 +456,7 @@ shellScript = "if test \"$CONFIGURATION\" == 'Deployment'; then\n\n    USER_NAME
 				GCC_ENABLE_TRIGRAPHS = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-                GCC_PREFIX_HEADER = ""; /* "4D Plugin_Prefix.pch"; */
+				GCC_PREFIX_HEADER = "";
 				GCC_VERSION = "";
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
@@ -408,11 +469,13 @@ shellScript = "if test \"$CONFIGURATION\" == 'Deployment'; then\n\n    USER_NAME
 					"$(PROJECT_DIR)/a",
 				);
 				LIBRARY_STYLE = Bundle;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MARKETING_VERSION = 2.1.0;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.4D.$4DEVAL(Replace string:C233($1.PRODUCT_NAME;" ";"-"))";
-				PRODUCT_NAME = "$4DEVAL($1.PRODUCT_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.4D.ImageCaptureCore;
+				PRODUCT_NAME = ImageCaptureCore;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SECTORDER_FLAGS = "";
@@ -428,7 +491,7 @@ shellScript = "if test \"$CONFIGURATION\" == 'Deployment'; then\n\n    USER_NAME
 		42D60B440A9DDBC8002ABB42 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-                ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
@@ -447,11 +510,12 @@ shellScript = "if test \"$CONFIGURATION\" == 'Deployment'; then\n\n    USER_NAME
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
-                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-                CODE_SIGN_IDENTITY = "Developer ID Application";
-                CODE_SIGN_STYLE = Manual;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
-                DEVELOPMENT_TEAM = Y69CWUC25B;
+				CURRENT_PROJECT_VERSION = 2.1.0;
+				DEVELOPMENT_TEAM = Y69CWUC25B;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -463,8 +527,10 @@ shellScript = "if test \"$CONFIGURATION\" == 'Deployment'; then\n\n    USER_NAME
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 2.1.0;
 				OBJROOT = "$(SRCROOT)/build";
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 				SYMROOT = "$(SRCROOT)/test/Plugins";
 			};
@@ -473,7 +539,7 @@ shellScript = "if test \"$CONFIGURATION\" == 'Deployment'; then\n\n    USER_NAME
 		42D60B450A9DDBC8002ABB42 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-                ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
@@ -493,10 +559,11 @@ shellScript = "if test \"$CONFIGURATION\" == 'Deployment'; then\n\n    USER_NAME
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-                CODE_SIGN_IDENTITY = "Developer ID Application";
-                CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
-                DEVELOPMENT_TEAM = Y69CWUC25B;
+				CURRENT_PROJECT_VERSION = 2.1.0;
+				DEVELOPMENT_TEAM = Y69CWUC25B;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -508,8 +575,10 @@ shellScript = "if test \"$CONFIGURATION\" == 'Deployment'; then\n\n    USER_NAME
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 2.1.0;
 				OBJROOT = "$(SRCROOT)/build";
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 				SYMROOT = "$(SRCROOT)/test/Plugins";
 			};
@@ -518,7 +587,7 @@ shellScript = "if test \"$CONFIGURATION\" == 'Deployment'; then\n\n    USER_NAME
 		42D60B460A9DDBC8002ABB42 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-                ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
@@ -538,11 +607,12 @@ shellScript = "if test \"$CONFIGURATION\" == 'Deployment'; then\n\n    USER_NAME
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-                CODE_SIGN_IDENTITY = "Developer ID Application";
-                CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
+				CURRENT_PROJECT_VERSION = 2.1.0;
+				DEVELOPMENT_TEAM = Y69CWUC25B;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-                CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
-                DEVELOPMENT_TEAM = Y69CWUC25B;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
@@ -553,7 +623,9 @@ shellScript = "if test \"$CONFIGURATION\" == 'Deployment'; then\n\n    USER_NAME
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 2.1.0;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 				SYMROOT = "$(SRCROOT)/test/Plugins";
 			};
@@ -562,7 +634,7 @@ shellScript = "if test \"$CONFIGURATION\" == 'Deployment'; then\n\n    USER_NAME
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		42D60B3F0A9DDBC8002ABB42 /* Build configuration list for PBXNativeTarget "$4DEVAL($1.PRODUCT_NAME)" */ = {
+		42D60B3F0A9DDBC8002ABB42 /* Build configuration list for PBXNativeTarget "ImageCaptureCore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				42D60B400A9DDBC8002ABB42 /* Development */,
@@ -572,7 +644,7 @@ shellScript = "if test \"$CONFIGURATION\" == 'Deployment'; then\n\n    USER_NAME
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;
 		};
-		42D60B430A9DDBC8002ABB42 /* Build configuration list for PBXProject "$4DEVAL($1.PRODUCT_NAME)" */ = {
+		42D60B430A9DDBC8002ABB42 /* Build configuration list for PBXProject "ImageCaptureCore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				42D60B440A9DDBC8002ABB42 /* Development */,
