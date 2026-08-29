@@ -186,7 +186,7 @@ bool convert_path_to_path(NSURL *u, std::string &str) {
             if(convert_text_to_path([scanner modulePath], modulePath)) {
                 json_scanner["modulePath"] = modulePath;
             }else{
-                json_scanner["iconPath"] = Json::Value::null;
+                json_scanner["modulePath"] = Json::Value::null;
             }
             
             std::string iconPath;
@@ -1086,6 +1086,7 @@ bool convert_path_to_path(NSURL *u, std::string &str) {
                 NSLog(@"scanner %@ is already closed", _scanner_id);
             }
         }
+        [_scanner_id release];
     }
     
     void runScanner(C_TEXT &scanner_id)
@@ -1103,6 +1104,7 @@ bool convert_path_to_path(NSURL *u, std::string &str) {
             }
             [Scan::device requestScan];
         }
+        [_scanner_id release];
     }
     
     void cancelScanner(C_TEXT &scanner_id)
@@ -1115,6 +1117,7 @@ bool convert_path_to_path(NSURL *u, std::string &str) {
             
             [Scan::device cancelScan];
         }
+        [_scanner_id release];
     }
 
     void getOption(C_TEXT &scanner_id, C_LONGINT &option, C_TEXT &result)
@@ -1285,6 +1288,7 @@ bool convert_path_to_path(NSURL *u, std::string &str) {
                     break;
             }
         }
+        [_scanner_id release];
     }
     
     void setOption(C_TEXT &scanner_id, C_LONGINT &option, C_TEXT &value)
@@ -1321,7 +1325,7 @@ bool convert_path_to_path(NSURL *u, std::string &str) {
                     else if([documentUTI isEqualToString:@"3"]) {scanner.documentUTI = (NSString *)kUTTypeBMP;}
                     else if([documentUTI isEqualToString:@"4"]) {scanner.documentUTI = (NSString *)kUTTypePDF;}
                     else if([documentUTI isEqualToString:@"5"]) {scanner.documentUTI = (NSString *)kUTTypeGIF;}
-                    else if([documentUTI isEqualToString:@"5"]) {scanner.documentUTI = (NSString *)kUTTypeJPEG2000;}
+                    else if([documentUTI isEqualToString:@"6"]) {scanner.documentUTI = (NSString *)kUTTypeJPEG2000;}
                     [documentUTI release];
                 }
                     break;
@@ -1456,6 +1460,7 @@ bool convert_path_to_path(NSURL *u, std::string &str) {
                     break;
             }//switch
         }
+        [_scanner_id release];
     }
 }
 
@@ -1517,7 +1522,7 @@ void listenerLoopExecuteMethod() {
         PA_SetLongintVariable(&params[0], param_scan_type);
         PA_Unistring path = PA_CreateUnistring((PA_Unichar *)param_scan_path.c_str());
         PA_SetStringVariable(&params[1], &path);
-        PA_SetBlobVariable(&params[2], (void *)&param_scan_data[0], (PA_long32)param_scan_data.size());
+        PA_SetBlobVariable(&params[2], (void *)param_scan_data.data(), (PA_long32)param_scan_data.size());
         PA_Unistring ctx = PA_CreateUnistring((PA_Unichar *)Scan::CALLBACK_METHOD_CONTEXT_INFO.c_str());
         PA_SetStringVariable(&params[3], &ctx);
         PA_Unistring info = PA_CreateUnistring((PA_Unichar *)param_scan_info.c_str());
@@ -1542,7 +1547,7 @@ void listenerLoopExecuteMethod() {
         PA_SetLongintVariable(&params[1], param_scan_type);
         PA_Unistring path = PA_CreateUnistring((PA_Unichar *)param_scan_path.c_str());
         PA_SetStringVariable(&params[2], &path);
-        PA_SetBlobVariable(&params[3], (void *)&param_scan_data[0], (PA_long32)param_scan_data.size());
+        PA_SetBlobVariable(&params[3], (void *)param_scan_data.data(), (PA_long32)param_scan_data.size());
         PA_Unistring ctx = PA_CreateUnistring((PA_Unichar *)Scan::CALLBACK_METHOD_CONTEXT_INFO.c_str());
         PA_SetStringVariable(&params[4], &ctx);
         PA_Unistring info = PA_CreateUnistring((PA_Unichar *)param_scan_info.c_str());
@@ -1567,10 +1572,24 @@ void listenerLoopExecuteMethod() {
     {
         std::lock_guard<std::mutex> lock(globalMutex);
      
-        Scan::CALLBACK_PARAMS_SCAN_TYPE.erase(oldest_param_scan_type);
-        Scan::CALLBACK_PARAMS_SCAN_PATH.erase(oldest_param_scan_path);
-        Scan::CALLBACK_PARAMS_SCAN_DATA.erase(oldest_param_scan_data);
-        Scan::CALLBACK_PARAMS_SCAN_INFO.erase(oldest_param_scan_info);
+        /* re-derive begin() here rather than reusing the iterators captured
+           before the lock above was released: PA_ExecuteMethodByID/
+           PA_ExecuteCommandByID can run for an arbitrary time, and if another
+           thread push_back's onto these vectors during that window (e.g. a
+           new scanned page arriving mid-callback) and that push_back
+           reallocates, the previously-held iterators would be invalidated -
+           erase()ing with them would be undefined behavior. The four vectors
+           are only ever appended at the back and only ever popped from the
+           front here, so the front element is still the one this call
+           already consumed. */
+        if(!Scan::CALLBACK_PARAMS_SCAN_TYPE.empty())
+            Scan::CALLBACK_PARAMS_SCAN_TYPE.erase(Scan::CALLBACK_PARAMS_SCAN_TYPE.begin());
+        if(!Scan::CALLBACK_PARAMS_SCAN_PATH.empty())
+            Scan::CALLBACK_PARAMS_SCAN_PATH.erase(Scan::CALLBACK_PARAMS_SCAN_PATH.begin());
+        if(!Scan::CALLBACK_PARAMS_SCAN_DATA.empty())
+            Scan::CALLBACK_PARAMS_SCAN_DATA.erase(Scan::CALLBACK_PARAMS_SCAN_DATA.begin());
+        if(!Scan::CALLBACK_PARAMS_SCAN_INFO.empty())
+            Scan::CALLBACK_PARAMS_SCAN_INFO.erase(Scan::CALLBACK_PARAMS_SCAN_INFO.begin());
     }
 }
 
@@ -2007,7 +2026,10 @@ void listenerLoopExecute()
         
         NSData *buf = [data dataBuffer];
         param_scan_data.resize([buf length]);
-        [buf getBytes:&param_scan_data[0] length:param_scan_data.size()];
+        if(!param_scan_data.empty())
+        {
+            [buf getBytes:param_scan_data.data() length:param_scan_data.size()];
+        }
         
         Json::Value json_info;
 
@@ -2391,7 +2413,7 @@ void ICA_CANCEL(PA_PluginParameters params) {
     
     Param1_scanner_id.fromParamAtIndex(pParams, 1);
     
-    Scan::runScanner(Param1_scanner_id);
+    Scan::cancelScanner(Param1_scanner_id);
 }
 
 void ICA_Get_scan_option(PA_PluginParameters params) {
