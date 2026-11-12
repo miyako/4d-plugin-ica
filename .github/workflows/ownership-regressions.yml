@@ -1,0 +1,20 @@
+name: Ownership regressions
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+permissions:
+  contents: read
+
+jobs:
+  ownership:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: ASan/UBSan synthetic-boundary harness
+        run: tests/ownership/run.sh . fixed

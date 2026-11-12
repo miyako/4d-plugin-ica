@@ -571,7 +571,13 @@ authorization; a new source version is not a substitute for investigating failur
 python3 .github/scripts/source_version.py
 python3 -B -m unittest discover -s tests -t . -v
 actionlint .github/workflows/*.yml
+tests/ownership/run.sh . fixed
 ```
+
+`tests/ownership/run.sh` (macOS, also run by the read-only *Ownership
+regressions* workflow on pushes/PRs to `master`) builds the plugin and helper
+sources with the unmodified 4D Plugin API under ASan/UBSan against a synthetic
+4D engine; see `tests/ownership/README.md`. It never starts the device browser.
 
 Tests use disposable real Git and local bare remotes, an independent canonical
 fake GitHub API and actual extracted workflow phases with a **closed PATH of

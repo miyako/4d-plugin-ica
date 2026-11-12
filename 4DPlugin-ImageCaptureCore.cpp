@@ -1512,12 +1512,15 @@ void listenerLoopExecuteMethod() {
     
     if(methodId)
     {
+        /* eVK_Undefined: PA_CreateVariable(eVK_Unistring/eVK_Blob) allocates
+           an empty string/handle that the shallow PA_Set*Variable below
+           would overwrite and leak */
         PA_Variable    params[5];
         params[0] = PA_CreateVariable(eVK_Longint);
-        params[1] = PA_CreateVariable(eVK_Unistring);
-        params[2] = PA_CreateVariable(eVK_Blob);
-        params[3] = PA_CreateVariable(eVK_Unistring);
-        params[4] = PA_CreateVariable(eVK_Unistring);
+        params[1] = PA_CreateVariable(eVK_Undefined);
+        params[2] = PA_CreateVariable(eVK_Undefined);
+        params[3] = PA_CreateVariable(eVK_Undefined);
+        params[4] = PA_CreateVariable(eVK_Undefined);
         
         PA_SetLongintVariable(&params[0], param_scan_type);
         PA_Unistring path = PA_CreateUnistring((PA_Unichar *)param_scan_path.c_str());
@@ -1528,21 +1531,28 @@ void listenerLoopExecuteMethod() {
         PA_Unistring info = PA_CreateUnistring((PA_Unichar *)param_scan_info.c_str());
         PA_SetStringVariable(&params[4], &info);
         
-        PA_ExecuteMethodByID(methodId, params, 5);
+        /* the result is owned by the caller; capture the error first
+           because PA_ClearVariable resets it */
+        PA_Variable result = PA_ExecuteMethodByID(methodId, params, 5);
+        PA_ErrorCode err = PA_GetLastError();
         
         PA_ClearVariable(&params[0]);
         PA_ClearVariable(&params[1]);
         PA_ClearVariable(&params[2]);
         PA_ClearVariable(&params[3]);
         PA_ClearVariable(&params[4]);
+        
+        if(err == eER_NoErr)
+            PA_ClearVariable(&result);
     }else{
         
+        /* eVK_Undefined: see above */
         PA_Variable    params[6];
         params[1] = PA_CreateVariable(eVK_Longint);
-        params[2] = PA_CreateVariable(eVK_Unistring);
-        params[3] = PA_CreateVariable(eVK_Blob);
-        params[4] = PA_CreateVariable(eVK_Unistring);
-        params[5] = PA_CreateVariable(eVK_Unistring);
+        params[2] = PA_CreateVariable(eVK_Undefined);
+        params[3] = PA_CreateVariable(eVK_Undefined);
+        params[4] = PA_CreateVariable(eVK_Undefined);
+        params[5] = PA_CreateVariable(eVK_Undefined);
         
         PA_SetLongintVariable(&params[1], param_scan_type);
         PA_Unistring path = PA_CreateUnistring((PA_Unichar *)param_scan_path.c_str());
@@ -1553,7 +1563,7 @@ void listenerLoopExecuteMethod() {
         PA_Unistring info = PA_CreateUnistring((PA_Unichar *)param_scan_info.c_str());
         PA_SetStringVariable(&params[5], &info);
         
-        params[0] = PA_CreateVariable(eVK_Unistring);
+        params[0] = PA_CreateVariable(eVK_Undefined);
         PA_Unistring method = PA_CreateUnistring((PA_Unichar *)Scan::LISTENER_METHOD.getUTF16StringPtr());
         PA_SetStringVariable(&params[0], &method);
         
